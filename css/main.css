@@ -1,0 +1,130 @@
+/* h1の設定 */
+h1{
+    text-align: center;
+    font-style: oblique;
+    font-family: Georgia;
+    border: 8px solid aquamarine;
+    background-color: lightblue;
+}
+
+/* navの設定 */
+nav{
+    text-align: center;
+    border: 5px solid gray;
+}
+
+/* body部分の設定 */
+body{
+    font-size: 16px;
+}
+
+/* h2部分の設定 */
+h3{
+    border: 2px solid aquamarine;
+    background-color: lightblue;
+    text-align: center;
+}
+
+/* Body部分をコンテナ */
+.container {
+    display: grid;
+    grid-template-areas: 
+        "header-A header-A"
+        "main-A aside-A"
+        "footer-A footer-A";
+        column-gap: 2em;
+        row-gap: 2em;
+}
+
+/* id="◯do"部分の表示 */
+#hajime{
+    background-color: aliceblue;
+}
+
+#tugi{
+    background-color: aliceblue;
+}
+
+#saigo{
+    border-bottom: 2px solid red;
+    background-color: aliceblue;
+}
+
+ul{
+    list-style: none;
+}
+.youken{
+    display: grid;
+    grid-template-columns: 150px 150px 150px ;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+#iti{
+    border: 2px solid gold;
+    background-color: lightsteelblue;
+}
+
+#ni{
+    border: 2px solid gold;
+    background-color: lightsteelblue;
+}
+
+#san{
+    border: 2px solid gold;
+    background-color: lightsteelblue;
+}
+
+/* table部分の設定 */
+table{
+    border-top: 3px solid lightsteelblue;
+    border-bottom: 3px solid lightsteelblue;
+    border-left: 3px solid lightsteelblue;
+    border-right: 3px solid lightsteelblue;
+    border-radius: 8px;
+}
+
+caption{
+    background-color: aqua;
+    border-radius: 8px;
+}
+
+th{
+    border: 1px double lightblue ;
+    border-radius: 8px;
+}
+
+td{
+    border: 1px double lightblue ;
+    border-radius: 4px;
+}
+
+/* ヘッダー部分 */
+header{
+    grid-area: header-A;
+}
+
+/* メイン部分（文章部分） */
+main{
+    grid-area: main-A;
+}
+
+/* サイド部分（表部分） */
+aside{
+    grid-area: aside-A;
+}
+
+/* フッター部分 */
+footer{
+    grid-area: footer-A;
+}
+
+/* song-displayの表示部分 */
+#song-display{
+    font-size: 1.0em;
+}
+/* clearの表示部分 */
+#clear{
+    background-color: yellow;
+    text-align: center;
+}

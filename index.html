@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tomoyoshi Tabata">
+    <meta name="keywords" content="html, css, javascript, ライブラリ, jquery, chart.js">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>コンリテⅡ最終課題</title>
+</head>
+<body>
+    <div class="container">
+    <header id="top">
+        <h1>カラオケでLet'sダイエット</h1>
+        <nav>
+            ホーム
+            タグリファレンス
+            問い合わせ
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h3>カラオケで痩せる</h3>
+            <div>
+                <p>ダイエットって辛いですよね…</p>
+                <p>どうせなら楽しみながらダイエットがしたいそこのあなた！</p>
+                <p>さぁ、一緒に楽しみながらダイエットをしましょう！</p>
+                <p>こんな人に超おすすめ</p>
+                <ul class="youken">
+                   <li id="iti">楽しみながらダイエットがしたい！</li>
+                   <li id="ni">人に見られず変わりたい！</li>
+                   <li id="san">同時にストレスも発散したい！</li>
+                </ul>
+            </div>
+            
+        </section>
+
+        <section>
+            <h3>このサイトの使い方</h3>
+            <div>
+            <p>このサイトの使い方を説明します。</p>
+            <ol>
+                <li id="hajime">はじめに右の曲リストから曲を選択する。</li>
+                <li id="tugi">本ページ下部の『kcal』を確認する。 ※歌うほど加算されます。</li>
+                <li id="saigo">男性の場合: 150 kcal  女性の場合: 100 kcal を超えたらクリア！</li>
+            </ol>
+            </div>
+        </section>
+
+        <section>
+            <h3>本日のカロリー消費量</h3>
+            <p id="clear">合計kcal : <span id="total">0</span></p>
+            <p>お疲れ様でした！</p>
+            <p>ダイエットは継続が命です！応援しています。</p>
+        </section>
+        <img src="../kadai_Last/media/music_picture.jpeg" height="100" width="450" alt="音楽の写真">
+    </main>
+    <aside>
+            <div>
+                <h3>曲名リスト</h3>
+                <table>
+                    <caption >消費カロリー高めの曲20</caption>
+                    <thead>
+                        <tr>
+                            <th>歌手名</th>
+                            <th>曲名</th>
+                            <th>kcal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2">あいみょん</td>
+                            <td>GOOD NIGHT BABY</td>
+                            <td><input type="checkbox" class="check" value="18.7">18.7</td>
+                            <!-- <td></td> -->
+                        </tr>
+                        <tr>
+                            <!-- <td></td> -->
+                            <td>マリーゴールド</td>
+                            <td><input type="checkbox" class="check" value="14.2">14.2</td>
+                            <!-- <td></td> -->
+                        </tr>
+                        <tr>
+                            <td>天月</td>
+                            <td>小さな恋の歌（cover）</td>
+                            <td><input type="checkbox" class="check" value="14.2">13.8</td>
+                        </tr>
+                        <tr>
+                            <td>Uru</td>
+                            <td>プロローグ</td>
+                            <td><input type="checkbox" class="check" value="13.9">13.9</td>
+                        </tr>
+                        <tr>
+                            <td>宇多田ヒカル</td>
+                            <td>初恋</td>
+                            <td><input type="checkbox" class="check" value="15.4">15.4</td>
+                        </tr>
+                        <tr>
+                            <td>Aimer</td>
+                            <td>I beg you</td>
+                            <td><input type="checkbox" class="check" value="14.5">14.5</td>
+                        </tr>
+                        <tr>
+                            <td>関ジャニ∞</td>
+                            <td>ここに</td>
+                            <td><input type="checkbox" class="check" value="14.0">14.0</td>
+                        </tr>
+                        <tr>
+                            <td>King &amp; Prince</td>
+                            <td>シンデレラガール</td>
+                            <td><input type="checkbox" class="check" value="13.6">13.6</td>
+                        </tr>
+                        <tr>
+                            <td>King Gnu</td>
+                            <td>白日</td>
+                            <td><input type="checkbox" class="check" value="13.7">13.7</td>
+                        </tr>
+                        <tr>
+                            <td>欅坂46</td>
+                            <td>アンビバレント</td>
+                            <td><input type="checkbox" class="check" value="13.8">13.8</td>
+                        </tr>
+                        <tr>
+                            <td>蒼彦太</td>
+                            <td>うだつ</td>
+                            <td><input type="checkbox" class="check" value="13.8">13.8</td>
+                        </tr>
+                        <tr>
+                            <td>Division All Stars</td>
+                            <td>ヒプノシスマイク-Division Battle Anthem-</td>
+                            <td><input type="checkbox" class="check" value="15.0">15.0</td>
+                        </tr>
+                        <tr>
+                            <td>當山みれい</td>
+                            <td>願い〜あの頃の君へ〜</td>
+                            <td><input type="checkbox" class="check" value="16.9">16.9</td>
+                        </tr>
+                        <tr>
+                            <td>平井大</td>
+                            <td>THE GIFT</td>
+                            <td><input type="checkbox" class="check" value="14.0">14.0</td>
+                        </tr>
+                        <tr>
+                            <td>三浦大知</td>
+                            <td>Blizzard</td>
+                            <td><input type="checkbox" class="check" value="20.2">20.2</td>
+                        </tr>
+                        <tr>
+                            <td>Mrs,GREEN APPLE</td>
+                            <td>僕のこと</td>
+                            <td><input type="checkbox" class="check" value="14.6">14.6</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">RADWIMPS</td>
+                            <td>正解</td>
+                            <td><input type="checkbox" class="check" value="17.3">17.3</td>
+                        </tr>
+                        <tr>
+                            <!-- <td></td> -->
+                            <td>そっけない</td>
+                            <td><input type="checkbox" class="check" value="16.7">16.7</td>
+                        </tr>
+                        <tr>
+                            <td>レペゼン地球</td>
+                            <td>バスターコール</td>
+                            <td><input type="checkbox" class="check" value="13.7">13.7</td>
+                        </tr>
+                        <tr>
+                            <td>んだほ＆ぺけたん From Fischer's</td>
+                            <td>サヨナラまたな</td>
+                            <td><input type="checkbox" class="check" value="17.3">17.3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <button id="show-song-button" tabindex="1" accesskey="q">歌う曲に困ったらここをタップ⇦</button>
+                <div id="song-display">あなたが歌う曲は…</div>
+            </div>
+    </aside>
+    <a href="#top">
+        <p>ページトップへ</p>
+    </a>
+    <footer>
+        Copyright &copy; Tomo
+    </footer>
+    </div>
+
+    <script src="../kadai_Last/js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+
+    <script src="../kadai_Last/js/jquery.js"></script>
+</body>
+
+</html>
